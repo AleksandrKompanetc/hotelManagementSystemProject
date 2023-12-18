@@ -1,5 +1,4 @@
 import { takeEvery, takeLatest, takeLeading, select } from "@redux-saga/core/effects";
-import { INCREASE_COUNT, DECREASE_COUNT } from "../constants";
 
 const delay = (time) => new Promise((resolve, reject) => {
     setTimeout(resolve, time * 1000);
@@ -12,7 +11,7 @@ export function* workerSaga() {
 }
 
 export function* watchClickSaga() {
-    yield takeLatest(INCREASE_COUNT, workerSaga);
+    
 }
 
 export default function* rootSaga() {
