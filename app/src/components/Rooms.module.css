@@ -1,3 +1,32 @@
 .rooms_wrapper {
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+    background: #dedcdc;
+}
+
+.table_background {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+}
+
+.room_buttons {
+    margin-left: 40px;
+    padding: 20px 0px;
+    height: 70px;
+    text-align: left;
+    background: #f6f6f6;
+    line-height: 1;
+}
+
+.clear_button {
+    margin-right: 20px;
+}
+
+.room_table {
+    padding: 0px 40px;
 }

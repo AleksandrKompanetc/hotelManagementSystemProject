@@ -1,6 +1,5 @@
 .header {
     display: flex;
-    margin-top: -35px;;
     justify-content: space-between;
     align-items: center;
     background: rgb(22, 2, 54);
@@ -27,13 +26,15 @@
     align-items: center;
     justify-content: space-between;
     width: auto;
-    margin-right: 80px;
+    margin-right: 40px;
 }
 
 .header__logo {
     width: 35px;
     height: 35px;
-    margin-left: 120px;
+    margin-left: 40px;
+    vertical-align: center;
+    margin-top: 28px;
 }
 
 .header__button {
@@ -49,6 +50,7 @@
     line-height: 20px;
     text-align: center;
     color: #fff;
+    border: none;
 }
 
 .button + .button {

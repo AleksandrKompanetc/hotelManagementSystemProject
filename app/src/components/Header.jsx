@@ -1,26 +1,29 @@
 import React from 'react';
 import styles from "./Header.module.css";
 import Logo from "../assets/FE-2-design_favicon.png";
-import { Button } from 'antd';
+import { Button, Layout } from 'antd';
 import { Link } from 'react-router-dom';
-import { SignUp } from './SignUp';
+import { UserOutlined } from '@ant-design/icons';
+
+const {Header: PureHeader} = Layout;
 
 const Header = () => {
     return (
-        <div className={styles.header}>
+        <PureHeader className={styles.header}>
             <Link to="/">
                 <img className={styles.header__logo} src={Logo} alt="" />
             </Link>
             <div className={styles.header__right}>
                 <div className={styles.header__img}>
-                    <Button className={styles.header__button}>
+                    <Button className={styles.header__button}>  
                         <Link to="/register">
-                            Log In
+                        <UserOutlined />
+                            Log Out
                         </Link>
                     </Button>
                 </div>
             </div>
-        </div>
+        </PureHeader>
     )
 }
 
