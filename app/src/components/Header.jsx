@@ -18,7 +18,7 @@ const Header = () => {
                     <Button className={styles.header__button}>  
                         <Link to="/register">
                         <UserOutlined />
-                            Log Out
+                            Log In
                         </Link>
                     </Button>
                 </div>
