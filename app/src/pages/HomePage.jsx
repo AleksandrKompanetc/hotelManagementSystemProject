@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import Header from "components/Header";
 import Home from "components/Home";
 
 const HomePage = () => {
@@ -11,15 +9,3 @@ const HomePage = () => {
 }
 
 export default HomePage;
-
-
-
-// useEffect(() => {
-//     window.location.replace('/register')
-// }, [])
-
-// return (
-//      <div>
-//         <h1>Welcome</h1>
-//      </div>
-// )
