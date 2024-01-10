@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'antd';
 import { Link } from 'react-router-dom';
-// const { Meta } = Card;
+
 const RoomCard = ({type, number, id, price, img}) => (
   <div>
   <Link to={`/rooms/${id}`}>
@@ -20,30 +20,3 @@ const RoomCard = ({type, number, id, price, img}) => (
   </div>
 );
 export default RoomCard;
-
-
-
-{/* <Link to={`/posts/${id}`}>
-  
-  </Link> */}
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import { Link } from "react-router-dom";
-
-// const Room = ({type, id, price}) => {
-//     return (
-//             <>
-//                 <div>{type}</div>
-//                 <div>{price}</div>
-//             </>
-//         )
-// }
-
-// export default Room;
