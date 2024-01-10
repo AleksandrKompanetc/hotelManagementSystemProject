@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from "./CheckIn.module.css";
-import { Input } from "antd";
-import { CloseOutlined, UserOutlined } from '@ant-design/icons';
-import { DatePicker, Button } from 'antd';
+import { CloseOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
 
 const CheckOut = ({ number, closeModal }) => {
     return (

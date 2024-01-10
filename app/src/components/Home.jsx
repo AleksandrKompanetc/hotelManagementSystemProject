@@ -3,7 +3,7 @@ import styles from './Home.module.css';
 
 const Home = () => {
     return (
-        <div className="home">
+        <div className={styles.home}>
             <Banner />
         </div>
     )

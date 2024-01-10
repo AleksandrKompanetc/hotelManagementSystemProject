@@ -53,15 +53,6 @@
     text-align: left;
 }
 
-/* .text {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 0;
-    background: blue;
-    text-align: left;
-    align-items: left;
-} */
-
 .buttons {
     display: flex;
     justify-content: flex-end;
@@ -70,8 +61,4 @@
 
 .cancel_button {
     margin-right: 10px;
-}
-
-.checkout_button {
-    
 }
