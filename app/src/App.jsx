@@ -6,9 +6,8 @@ import HomePage from 'pages/HomePage';
 import RegisterPage from 'pages/RegisterPage';
 import RoomPage from 'pages/RoomPage';
 import Rooms from 'components/Rooms';
-import Home from 'components/Home';
-
 import { Layout } from 'antd';
+
 const { Footer, Content } = Layout;
 
 const contentStyle = {
@@ -39,5 +38,6 @@ const App = () => (
 
   </>
 );
+
 export default App;
 
