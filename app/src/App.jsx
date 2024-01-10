@@ -6,7 +6,6 @@ import HomePage from 'pages/HomePage';
 import RegisterPage from 'pages/RegisterPage';
 import RoomPage from 'pages/RoomPage';
 import Rooms from 'components/Rooms';
-
 import { Layout } from 'antd';
 const { Content } = Layout;
 
@@ -38,5 +37,6 @@ const App = () => (
 
   </>
 );
+
 export default App;
 

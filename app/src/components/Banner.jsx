@@ -7,9 +7,6 @@ const Banner = () => {
             <div className={styles.banner}>
                 <Rooms />
             </div>
-            <div className="booking__div">
-
-            </div>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import RoomCard from './RoomCard';
 import data from "../firebase-data.json";
 import styles from "./Rooms.module.css"
 import { Table, Button, Checkbox } from 'antd';
