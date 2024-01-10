@@ -19,4 +19,5 @@ const RoomCard = ({type, number, id, price, img}) => (
     </Link>
   </div>
 );
+
 export default RoomCard;
