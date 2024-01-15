@@ -7,8 +7,7 @@ import RegisterPage from 'pages/RegisterPage';
 import RoomPage from 'pages/RoomPage';
 import Rooms from 'components/Rooms';
 import { Layout } from 'antd';
-
-const { Footer, Content } = Layout;
+const { Content } = Layout;
 
 const contentStyle = {
   textAlign: 'center',
@@ -38,4 +37,6 @@ const App = () => (
 
   </>
 );
+
 export default App;
+
