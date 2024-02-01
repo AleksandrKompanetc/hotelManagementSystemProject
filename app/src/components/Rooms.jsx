@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import RoomCard from './RoomCard';
-import data from "../firebase-data.json";
 import styles from "./Rooms.module.css"
 import { Table, Button, Checkbox } from 'antd';
 import { Link } from 'react-router-dom';
+import db from '../firebaseConfig';
 
 const Rooms = () => {
+  const [rooms, setRooms] = useState([]);
     const columns = [
       {
         title: 'Number',
@@ -133,6 +134,20 @@ const Rooms = () => {
           </Link>),
       }
     ];
+
+    useEffect(() => {
+      const fetchData = async () => {
+          try {
+              const snapshot = await db.ref('Rooms').once('value');
+              const dataFromFirebase = snapshot.val();
+              setRooms(dataFromFirebase);
+          } catch (error) {
+              console.error('Error fetching data: ', error);
+          }
+      };
+
+      fetchData();
+  }, []);
     const onChange = (pagination, filters, sorter, extra) => {
         console.log('params', pagination, filters, sorter, extra);
       };
@@ -144,7 +159,7 @@ const Rooms = () => {
           <Checkbox>Free rooms only</Checkbox>
           </div>
           <div className={styles.room_table}>
-            <Table columns={columns} dataSource={data.Rooms} onChange={onChange} />
+            <Table columns={columns} dataSource={rooms} onChange={onChange} />
           </div>
         </div>
     )
