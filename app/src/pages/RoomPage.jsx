@@ -26,7 +26,7 @@ const RoomPage = () => {
                 const dataFromFirebase = snapshot.val();
                 setRooms(dataFromFirebase);
             } catch (error) {
-                console.error('Error fetching data: ', error);
+                console.error('Error: ', error);
             }
         };
 
