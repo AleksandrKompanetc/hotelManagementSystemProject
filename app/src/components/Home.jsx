@@ -2,7 +2,7 @@ import Banner from './Banner';
 
 const Home = () => {
     return (
-        <div className={styles.home}>
+        <div>
             <Banner />
         </div>
     )
